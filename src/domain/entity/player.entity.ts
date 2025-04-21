@@ -16,4 +16,8 @@ export class Player {
       codiName,
     })
   }
+
+  static create(data: CreatePlayerDto, codiName: string) {
+    return new Player(data, codiName)
+  }
 }
