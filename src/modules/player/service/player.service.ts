@@ -41,7 +41,10 @@ export class PlayerService {
       throw new ConflictException('All codiNames are in use')
     }
 
-    let player = new Player(data, codiNames[randomInt(0, codiNames.length - 1)])
+    let player = Player.create(
+      data,
+      codiNames[randomInt(0, codiNames.length - 1)]
+    )
     player = await this.playerRepository.create(player)
     return player
   }
