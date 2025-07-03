@@ -12,7 +12,7 @@ const config: JestConfigWithTsJest = {
     collectCoverageFrom: ['**/*.(t|j)s'],
     coverageDirectory: '../coverage',
     moduleFileExtensions: ['js', 'json', 'ts'],
-    //moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths)
+    moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths)
 }
 
 

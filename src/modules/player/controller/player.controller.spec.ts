@@ -6,8 +6,6 @@ import { PrismaModule } from '../../../infra/prisma/prisma.module'
 import { HttpModule } from '@nestjs/axios'
 import { CreatePlayerDto } from '../../../domain/dto/player.dto'
 import { CodiName } from '../../../domain/enum/player.enum'
-import { Player } from '../../../domain/entity/player.entity'
-import { ConflictException } from '@nestjs/common'
 
 describe('PlayerController', () => {
   let controller: PlayerController
