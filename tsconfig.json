@@ -41,6 +41,5 @@
       ]
     },
     "resolveJsonModule": true,
-    "types": ["@types/jest","node"]
   }
 }
